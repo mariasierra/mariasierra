@@ -1,0 +1,81 @@
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 15px;
+  font-family: courier new;
+
+  padding: 4em;
+  text-align: center;
+  
+}
+
+.imgmain{
+	height: 400px;
+	 transform: rotate(-90deg);
+}
+
+header h1{
+  font-size: 30px;
+  font-family: courier new;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0);
+	margin-bottom: 50px;
+	text-align: left;
+}
+
+
+
+.container{
+	position: relative;
+	width: 600px;
+	height: 600px;	
+	margin: 10px auto 0 auto;
+	
+	overflow: hidden;  /*todo lo que se sobresale*/
+}
+
+.container:hover .capaTEXT{ /*hover es que pasas ratón por encima y cambia el estilo*/
+
+	top:-410px; /*justo el tamaño de la capa*/
+	left: -135px;
+	opacity: 0.7;
+}
+
+
+
+.imgInicio{
+	width: 100px;
+	height: 100px;
+}
+
+.capaINICIO{
+	position:relative;
+	width: 100px;
+	height: 100px;
+	vertical-align:middle;
+	midth:100%;
+	display:table-cell;
+	margin:auto;
+}
+
+.capaTEXT{
+	color:black;
+	background-color: white; /*COLOR QUE APARECE EN EL HOVER; NO LA IMG*/
+	width: 833px;
+	height: 400px;
+	margin: 0 auto 0 auto;
+	display:table;
+	
+	position: relative;
+	top:-400px;
+	
+	opacity: 0;
+	transition:  all ease; /*para que se desplace lentamente*/
+}
+
+.imgInicio{
+	width: 833px;
+	height: 661px;
+}
